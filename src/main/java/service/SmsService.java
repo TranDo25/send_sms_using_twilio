@@ -8,10 +8,11 @@ import lombok.extern.slf4j.Slf4j;
 import model.SmsPojo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 
 @Slf4j
-@Component
+@Service
 public class SmsService {
 
     @Value("${TWILIO_ACCOUNT_SID}")
